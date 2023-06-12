@@ -11,7 +11,7 @@ function Modal({ show, onClose, onConfirm }) {
         <p className="text-lg font-semibold mb-4">
           Are you sure you want to exit the page?
         </p>
-        <div className="flex justify-end">
+        <div className="flex justify-center">
           <Button
             onClick={onConfirm}
             className="bg-green-500 mx-2 hover:bg-green-700"
@@ -20,7 +20,7 @@ function Modal({ show, onClose, onConfirm }) {
           </Button>
           <Button
             onClick={onClose}
-            className=" bg-gray-200 text-black rounded hover:bg-gray-400"
+            className=" bg-gray-500 text-black rounded hover:bg-gray-700"
           >
             No
           </Button>
