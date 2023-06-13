@@ -1,0 +1,29 @@
+{
+    "quizzes": [
+      {
+        "question": "Which company developed JavaScript?",
+        "options": ["Microsoft", "Netscape", "Sun Microsystems", "IBM"],
+        "correctAnswer": "Netscape"
+      },
+      {
+        "question": "What is a closure in JavaScript?",
+        "options": [
+          "A function that returns another function",
+          "A private variable",
+          "An object property",
+          "A type of loop"
+        ],
+        "correctAnswer": "A function that returns another function"
+      },
+      {
+        "question": "What is the difference between '==' and '===' in JavaScript?",
+        "options": [
+          "'==' compares values, '===' compares values and types",
+          "'==' compares types, '===' compares values",
+          "'==' is faster than '==='",
+          "'===' is a syntax error"
+        ],
+        "correctAnswer": "'==' compares values, '===' compares values and types"
+      }
+    ]
+  }

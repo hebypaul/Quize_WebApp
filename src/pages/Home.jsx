@@ -1,25 +1,26 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import Header from '../components/Header';
 import Button from '../components/Button';
 import { FaCog } from 'react-icons/fa';
+
 const Home = () => {
   const navigate = useNavigate();
-  
+  function handleonClick() {
+    console.log("settings clicked")
+  }
   return (
     <>
       <div className="flex flex-col h-screen">
-      <header className="flex justify-between items-center bg-green-500 p-4">
-        <div className="flex items-center">
-          <img src="/logo.jpg" alt="Logo" className="h-8 mr-2" />
-        </div>
-        <h1 className="text-white text-lg font-bold">Quiz Web App</h1>
-        <div>
-          <button>
-            <FaCog className="text-white text-lg" />
-          </button>
-        </div>
-      </header>
-
+      <Header
+          logoSrc="/logo.jpg"
+          title="Quiz Web App"
+          child={
+            <Button onClick={handleonClick} className=" bg-green-500 text-white">
+              <FaCog />
+            </Button>
+          }
+        />
       <div className="flex flex-col justify-center items-center flex-grow ">
 
         <div className="pb-8">
